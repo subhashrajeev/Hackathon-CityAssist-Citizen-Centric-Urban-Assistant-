@@ -1,0 +1,16 @@
+[
+  {
+    "id": "u-admin-1",
+    "email": "admin@cityassist.local",
+    "password": "admin123",
+    "name": "Admin User",
+    "role": "admin"
+  },
+  {
+    "id": "u-demo-1",
+    "email": "demo@cityassist.city",
+    "password": "demo123",
+    "name": "Demo User",
+    "role": "user"
+  }
+]

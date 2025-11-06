@@ -1,0 +1,68 @@
+[
+  {
+    "id": "A1",
+    "title": "High AQI in Downtown",
+    "zone": "Downtown",
+    "severity": "high",
+    "type": "air_quality",
+    "message": "PM2.5 reached 180 ug/m3. Consider wearing a mask outdoors.",
+    "time": "2025-11-06T09:00:00Z",
+    "actionable": true,
+    "action": "View air quality map"
+  },
+  {
+    "id": "A2",
+    "title": "Water Outage Scheduled",
+    "zone": "North District",
+    "severity": "medium",
+    "type": "utility",
+    "message": "Scheduled maintenance from 14:00 to 16:00. Store water in advance.",
+    "time": "2025-11-06T08:00:00Z",
+    "actionable": false,
+    "action": null
+  },
+  {
+    "id": "A3",
+    "title": "Heavy Traffic on Main Street",
+    "zone": "City Center",
+    "severity": "low",
+    "type": "traffic",
+    "message": "Accident reported. Use alternate route via Park Avenue.",
+    "time": "2025-11-06T10:30:00Z",
+    "actionable": true,
+    "action": "Get alternate route"
+  },
+  {
+    "id": "A4",
+    "title": "Power Outage Restored",
+    "zone": "East Side",
+    "severity": "info",
+    "type": "utility",
+    "message": "Power has been restored to all affected areas.",
+    "time": "2025-11-06T07:45:00Z",
+    "actionable": false,
+    "action": null
+  },
+  {
+    "id": "A5",
+    "title": "Vaccination Drive Today",
+    "zone": "Community Center",
+    "severity": "info",
+    "type": "health",
+    "message": "Free flu vaccination available 9 AM - 5 PM at City Community Center.",
+    "time": "2025-11-06T06:00:00Z",
+    "actionable": true,
+    "action": "View location"
+  },
+  {
+    "id": "A6",
+    "title": "Road Closure Alert",
+    "zone": "West Avenue",
+    "severity": "medium",
+    "type": "traffic",
+    "message": "West Avenue closed for construction until Nov 10. Follow detour signs.",
+    "time": "2025-11-06T05:00:00Z",
+    "actionable": true,
+    "action": "View detour map"
+  }
+]

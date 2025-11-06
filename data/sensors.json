@@ -1,0 +1,87 @@
+[
+  {
+    "id": "SEN001",
+    "type": "air_quality",
+    "label": "Downtown AQI Monitor",
+    "zone": "Downtown",
+    "location": { "lat": 40.7128, "lng": -74.0060 },
+    "status": "active",
+    "last_reported": "2025-11-06T10:45:00Z",
+    "metrics": {
+      "pm25": 180,
+      "pm10": 210,
+      "aqi": 165,
+      "quality": "Unhealthy"
+    }
+  },
+  {
+    "id": "SEN002",
+    "type": "air_quality",
+    "label": "North District AQI Monitor",
+    "zone": "North District",
+    "location": { "lat": 40.7228, "lng": -74.0160 },
+    "status": "active",
+    "last_reported": "2025-11-06T10:45:00Z",
+    "metrics": {
+      "pm25": 45,
+      "pm10": 62,
+      "aqi": 85,
+      "quality": "Moderate"
+    }
+  },
+  {
+    "id": "SEN003",
+    "type": "traffic",
+    "label": "Main St Traffic Camera",
+    "zone": "Downtown",
+    "location": { "lat": 40.7138, "lng": -74.0070 },
+    "status": "active",
+    "last_reported": "2025-11-06T10:46:00Z",
+    "metrics": {
+      "vehicle_count": 245,
+      "avg_speed": 15,
+      "congestion_level": "high"
+    }
+  },
+  {
+    "id": "SEN004",
+    "type": "water",
+    "label": "East Side Water Pressure",
+    "zone": "East Side",
+    "location": { "lat": 40.7328, "lng": -74.0260 },
+    "status": "active",
+    "last_reported": "2025-11-06T10:45:00Z",
+    "metrics": {
+      "pressure_psi": 65,
+      "flow_rate": 450,
+      "status": "normal"
+    }
+  },
+  {
+    "id": "SEN005",
+    "type": "power",
+    "label": "West Ave Power Grid",
+    "zone": "West Avenue",
+    "location": { "lat": 40.7428, "lng": -74.0360 },
+    "status": "active",
+    "last_reported": "2025-11-06T10:45:00Z",
+    "metrics": {
+      "voltage": 240,
+      "load_percentage": 78,
+      "status": "normal"
+    }
+  },
+  {
+    "id": "SEN006",
+    "type": "noise",
+    "label": "City Center Noise Monitor",
+    "zone": "City Center",
+    "location": { "lat": 40.7158, "lng": -74.0080 },
+    "status": "active",
+    "last_reported": "2025-11-06T10:45:00Z",
+    "metrics": {
+      "decibels": 72,
+      "level": "moderate"
+    }
+  }
+]

@@ -1,0 +1,38 @@
+{
+  "active_incidents": {
+    "value": 24,
+    "change": "+3",
+    "trend": "up",
+    "label": "Active Incidents"
+  },
+  "avg_response_time": {
+    "value": "2.5h",
+    "change": "-15%",
+    "trend": "down",
+    "label": "Avg Response Time"
+  },
+  "citizen_reports": {
+    "value": 156,
+    "change": "+12",
+    "trend": "up",
+    "label": "Reports Today"
+  },
+  "city_health_index": {
+    "value": "87%",
+    "change": "+2%",
+    "trend": "up",
+    "label": "City Health Index"
+  },
+  "resolved_today": {
+    "value": 45,
+    "change": "+8",
+    "trend": "up",
+    "label": "Resolved Today"
+  },
+  "service_uptime": {
+    "value": "99.2%",
+    "change": "0%",
+    "trend": "stable",
+    "label": "Service Uptime"
+  }
+}

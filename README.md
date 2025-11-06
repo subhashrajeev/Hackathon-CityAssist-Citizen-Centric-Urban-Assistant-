@@ -7,6 +7,8 @@
 
 **CityAssist** is a modern, citizen-focused Smart City Progressive Web App (PWA) that helps residents interact with city services, receive personalized alerts, report civic issues, and access essential local services. Built for daily utility with a beautiful, accessible interface.
 
+**🎯 Powered by Real Data:** Integrated with 5 production-ready Kaggle datasets for AI/ML capabilities including air quality monitoring, traffic prediction, power outage detection, image classification, and weather forecasting.
+
 ## 🌟 Features
 
 ### Core Functionality
@@ -143,6 +145,20 @@ Use these credentials to login and explore the application:
 - **State Management**: React Hooks + SWR
 - **Type Safety**: TypeScript
 
+### Backend & ML (Optional)
+- **API Framework**: FastAPI (Python)
+- **ML Libraries**: TensorFlow, Scikit-learn, XGBoost
+- **Data Processing**: Pandas, NumPy
+- **Image Processing**: OpenCV, Pillow
+- **Time Series**: Prophet, Statsmodels
+
+### Data Sources
+- **Air Quality**: India station-level AQI data (Kaggle)
+- **Traffic**: Metro interstate traffic with weather (Kaggle)
+- **Power Outages**: Historical US outage data (Kaggle)
+- **Image Classification**: Garbage/civic issue images (Kaggle)
+- **Weather**: Historical hourly weather data (Kaggle)
+
 ### Optional Integrations
 - **Maps**: React Leaflet (add `npm install leaflet react-leaflet`)
 - **Charts**: Chart.js + React-ChartJS-2 (add for analytics)
@@ -206,8 +222,9 @@ The app uses a simple mock authentication system suitable for demos:
 
 **For Production:** Replace with proper authentication (NextAuth, Auth0, Firebase Auth, etc.)
 
-## 📊 Mock Data
+## 📊 Data & Datasets
 
+### Mock Data (Included)
 All data is stored in JSON files in the `/data` directory:
 
 - **users.json** - Demo accounts
@@ -217,7 +234,54 @@ All data is stored in JSON files in the `/data` directory:
 - **services.json** - Local facilities
 - **kpis.json** - Dashboard metrics
 
-**For Production:** Replace with API calls to your backend services.
+### Production Datasets (Kaggle)
+
+Your manager has provided **5 real-world datasets** for production ML features:
+
+1. **🌫️ Air Quality Data (India)** - Station-level AQI and pollutant readings
+   - [Dataset Link](https://www.kaggle.com/datasets/rohanrao/air-quality-data-in-india)
+   - Use Case: AQI predictions, health alerts, air quality mapping
+
+2. **🚗 Metro Interstate Traffic Volume** - Traffic patterns with weather
+   - [Dataset Link](https://www.kaggle.com/datasets/ulrikthygepedersen/metro-interstate-traffic-volume)
+   - Use Case: Traffic predictions, route optimization, congestion alerts
+
+3. **⚡ Electric Power Outages (US)** - Historical outage events
+   - [Dataset Link](https://www.kaggle.com/datasets/ammaraahmad/electric-power-outages-us-2000-2016)
+   - Use Case: Outage prediction, duration estimation, service alerts
+
+4. **🗑️ Garbage Classification** - Civic issue image classification
+   - [Dataset Link](https://www.kaggle.com/datasets/asdasdasasdas/garbage-classification)
+   - Use Case: Auto-categorize reports, image triage, priority scoring
+
+5. **🌤️ Historical Hourly Weather** - Multi-city weather data
+   - [Dataset Link](https://www.kaggle.com/datasets/selfishgene/historical-hourly-weather-data)
+   - Use Case: Weather-based alerts, incident prediction, forecasting
+
+**📖 Full Integration Guide:** See [DATASETS.md](./DATASETS.md) for detailed instructions on downloading, preprocessing, and integrating these datasets.
+
+### Quick Start with Datasets
+
+```bash
+# 1. Install Python dependencies
+pip install -r requirements.txt
+
+# 2. Set up Kaggle API
+# Get your API key from kaggle.com/account
+mkdir -p ~/.kaggle
+cp kaggle.json ~/.kaggle/
+
+# 3. Download datasets
+bash scripts/download_datasets.sh
+
+# 4. Preprocess data
+python scripts/preprocess_data.py
+
+# 5. Train models (optional)
+python scripts/train_models.py
+```
+
+**For Production:** Use these datasets to build ML models and replace mock data with real predictions.
 
 ## 🎯 API Integration
 
